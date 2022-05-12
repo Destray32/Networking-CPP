@@ -5,8 +5,6 @@
 
 #define RESET_FLAGI flaga = false
 
-HBITMAP bitmap;
-
 int main()
 {
 #pragma region Zmienne
@@ -87,7 +85,7 @@ int main()
 	PrzygotowanieHasla(haslo1, ustawHasloReturn, haslo);
 
 	// wylsanie ustawionego hasla z wykrzyknikiem
-	if (networking::sock.is_open() && networking::sock2.is_open() && networking::sock3.is_open() && networking::sock4.is_open())
+	if (networking::sock.is_open() || networking::sock2.is_open() || networking::sock3.is_open() || networking::sock4.is_open())
 	{
 		for (int i = 0; i < iloscGraczy; i++)
 		{
@@ -116,7 +114,7 @@ int main()
 	// main loop gry klienta
 	while (znalezioneLitery < dlugoscHasla && hp > 0)
 	{
-		if (iterator == 4)
+		if (iterator == iloscGraczy)
 		{
 			iterator = 0;
 		}
@@ -138,7 +136,7 @@ int main()
 		sockety_p[iterator]->read_some(asio::buffer(&l, 1));
 
 		//wyslij te literke do reszty graczy
-		for (int i = 0; iloscGraczy < 4; i++)
+		for (int i = 0; i < iloscGraczy; i++)
 		{
 			// pomiñ wysy³adnie do gracza od ktorego wlasnie dostales literke
 			if (i == iterator)
