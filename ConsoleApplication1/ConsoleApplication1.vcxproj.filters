@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="funkcje">
+      <UniqueIdentifier>{0416fc59-b71d-415d-865a-0685df707959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Prekompilowane">
+      <UniqueIdentifier>{1640c660-ec40-4a67-b2fe-5193457a25f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="klasy">
+      <UniqueIdentifier>{ee569804-8270-402d-920d-ca9ce95585af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Prekompilowane</Filter>
+    </ClCompile>
+    <ClCompile Include="funkcje.cpp">
+      <Filter>funkcje</Filter>
+    </ClCompile>
+    <ClCompile Include="slowo.cpp">
+      <Filter>klasy</Filter>
+    </ClCompile>
+    <ClCompile Include="host-main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Prekompilowane</Filter>
+    </ClInclude>
+    <ClInclude Include="funkcje.h">
+      <Filter>funkcje</Filter>
+    </ClInclude>
+    <ClInclude Include="slowo.h">
+      <Filter>klasy</Filter>
+    </ClInclude>
+    <ClInclude Include="namespaces.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
