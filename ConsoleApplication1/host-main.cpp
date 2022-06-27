@@ -36,7 +36,7 @@ int main()
 	// wkazniki na sockety
 	asio::ip::tcp::socket* sockety_p[4] = { &networking::sock, &networking::sock2, &networking::sock3, &networking::sock4 };
 
-	// make pointer array of gracz1 etc.
+	// wskazniki na graczy
 	std::string* gracz[4] = { &gracz1, &gracz2, &gracz3, &gracz4 };
 
 #pragma endregion
@@ -118,7 +118,7 @@ int main()
 		{
 			iterator = 0;
 		}
-		// reset flagi (flaga = false)
+		
 		RESET_FLAGI;
 
 		std::cout << "Akutalna ilosc zyc: " << hp << '\n';

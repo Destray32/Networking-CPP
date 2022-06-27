@@ -101,9 +101,6 @@ int main()
 	haslo.pop_back();
 	dlugoscHasla = haslo.size();
 
-	// TODO: 
-	// pospinaæ co sie da w funkcje zeby by³o przejrzyscie
-
 	hasloDoWyswietlenia = ZmienZdanie(haslo);
 	IndeksyPol(hasloDoWyswietlenia, indeksyPol);
 
@@ -116,7 +113,6 @@ int main()
 	{
 		std::string kodKolejki;
 
-		// reset flagi (flaga = false)
 		RESET_FLAGI;
 
 		std::cout << "Akutalna ilosc zyc: " << hp << '\n';
