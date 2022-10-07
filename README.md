@@ -1,9 +1,9 @@
-## Kompilacja
+## Compilation
 
-Należy skompilować dwa razy. Raz kod clienta a drugi raz kod hosta. :)
+To work properly, you must compile code section for host and then for client.
 
 ----
 
-### Małe informacje
+### Information
 
-Planuje dobrze opisać to readme ale na razie mogę tylko odesłać do mojej strony gdzie umieściłem co nieco o tym kto mnie zainspirował 😃 https://nextjs-five-azure-11.vercel.app/asio
+It should be refactored. Old code, I would put code in appropriate files. Sorry for that
